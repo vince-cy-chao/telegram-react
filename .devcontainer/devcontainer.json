@@ -6,16 +6,7 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "remote.autoForwardPorts": false,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.detectIndentation": false,
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.formatOnSave": true,
-        "files.eol": "\n",
-        "[jsonc]": {
-          "editor.defaultFormatter": "vscode.json-language-features"
-        }
+        "remote.autoForwardPorts": false
       },
       "extensions": [
         "mhutchie.git-graph",
