@@ -1,0 +1,35 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "main",
+  "workspaceFolder": "/workspaces",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "remote.autoForwardPorts": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "files.eol": "\n",
+        "[jsonc]": {
+          "editor.defaultFormatter": "vscode.json-language-features"
+        }
+      },
+      "extensions": [
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "onCreateCommand": "if ! git config --get safe.directory > /dev/null; then git config --add safe.directory $PWD; fi",
+  "forwardPorts": [
+    3005 // frontend
+  ],
+  "remoteUser": "root"
+}
