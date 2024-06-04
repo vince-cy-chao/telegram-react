@@ -1,5 +1,5 @@
 {
-  "homepage": "https://evgeny-nadymov.github.io/telegram-react",
+  "homepage": "https://vince-cy-chao.github.io/telegram-react",
   "name": "telegram_react",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +23,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.1.1",
     "react-transition-group": "^4.3.0",
-    "tdweb": "^1.7.10"
+    "tdweb": "1.7.10"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [

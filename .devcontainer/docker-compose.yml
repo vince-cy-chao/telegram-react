@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  main:
+    image: node:14
+    volumes:
+      - ..:/workspaces:cached
+      - ${HOME}${USERPROFILE}/.ssh:/root/.ssh
+    command: sleep infinity
+    ports:
+      - 3005:3000
